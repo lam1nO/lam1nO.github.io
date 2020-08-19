@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1519">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>УЗИ</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="/img/logo/logo.svg" alt="logo">
+            </div>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Врачи</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__main">
+            <div class="header__title">
+                Ваше Здоровье - <br>Наша Цель
+            </div>
+            <div class="header__text">
+                <p class="text">Мы работаем, чтобы заботиться о Вашем здоровье.</p>
+            </div>
+            <div class="header_buttons">
+                <button class="contact-us">
+                    Свяжитесь с нами
+                </button>
+                <button class="more">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="speciality">
+        <div class="speciality__title">
+            <h2 class="main-title">Наши Услуги</h2>
+        </div>
+        <div class="speciality__wrapper">
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+            <div class="speciality__block">
+                <div class="icon-bg">
+                    <img src="img/icons/heart.svg" class="icon">
+                </div>
+                <h3 class="speciality__heading">Lorem</h3>
+                <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!</div>
+            </div>
+        </div>
+    </section>
+    <section class="patients">
+        <div class="patients__title">
+            <h2 class="main-title">Отзывы</h2>
+        </div>
+
+        <div class="slider">    
+            <div class="slider__slides">
+                <div class="item">
+                    <div class="slideWrapper">
+                        <div class="patients__say">1 Lorem ipsum dolor lorem sit amet, consectetur adipisicing elit.
+                            Cupiditate hic atque laudantium impedit commodi minima adipisci ullam aliquam!</div>
+                        <div class="patients__name">Lana Del Rey</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slideWrapper">
+                        <div class="patients__say">2 Lorem ipsum dolor lorem sit amet, consectetur adipisicing elit.
+                            Cupiditate hic atque laudantium impedit commodi minima adipisci ullam aliquam!</div>
+                        <div class="patients__name">Lana Del Rey</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slideWrapper">
+                        <div class="patients__say">3 Lorem ipsum dolor lorem sit amet, consectetur adipisicing elit.
+                            Cupiditate hic atque laudantium impedit commodi minima adipisci ullam aliquam!</div>
+                        <div class="patients__name">Lana Del Rey</div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094</a>
+            <a class="next" onclick="plusSlide()">&#10095</a>
+
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
