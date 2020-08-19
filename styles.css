@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue: #0070cd;
+    --gray: #999999;
+    --black: #444444;
+    --bg: #F7FAFC;
+    --titles-font: "Nunito", Arial, sans-serif;
+    --texts-font: "Open Sans", Arial, sans-serif;
+}
+
+
+.header{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 800px;
+    padding-top: 35px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-image: url("/img/bg/hero.jpg");
+    background-position: right top;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.header__container{
+    display: flex;
+}
+
+.header__logo{
+    width: 130px;
+    height: 71px;
+}
+
+.menu{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu__item{
+    list-style-type: none;
+    margin-right: 55px;
+}
+
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.menu__link{
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--texts-font);
+}
+
+.menu__:hover{
+    color: var(--blue);
+}
+
+.header__main{
+    margin-top: 170px;
+}
+
+.header__title{
+    font-family: var(--titles-font);
+    font-size: 55px;
+    color: var(--black);
+    line-height: 75px;
+    font-weight: 500;
+}
+
+.header__text{
+    font-family: var(--texts-font);
+    margin-top: 25px;
+}
+
+.text{
+    font-size: 18px;
+    color: var(--gray);
+}
+
+.contact-us{
+    background: var(--blue);
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    color: #ffffff;
+    appearance: none;
+    border: 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.15);
+    border-radius: 74px;
+    margin-right: 10px;
+    font-family: var(--texts-font);
+}
+
+.contact-us:hover{
+    background: #00549a;
+    cursor: pointer;
+}
+.contact-us:focus{
+    outline: none;
+}
+
+.more{
+    background: #ffffff;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black);
+    appearance: none;
+    letter-spacing: .3px;
+    border: 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.15);
+    border-radius: 74px;
+    font-family: var(--texts-font);
+}
+.more:hover{
+    background-color: #F0F0F0;
+}
+
+.more:focus{
+    outline: none;
+}
+
+.speciality{
+    padding-top: 120px;
+}
+
+.speciality__title{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin: 0;
+    font-weight: 500;
+}
+
+.speciality__title{
+    margin-bottom: 60px;
+}
+
+.main-title{
+    color: var(--black);
+    font-size: 36px;
+    font-family: var(--titles-font);
+}
+
+.speciality__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15%;
+    padding-left: 15%;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.speciality__block{
+    width: 210px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.speciality__block:hover{
+    box-shadow: 0px 10px 40px rgba(32, 62, 84, 0.08);
+}
+
+.icon-bg{
+    width: 80px;
+    height: 80px;
+    background-color: #eff8ff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    margin-top: 10px;
+    max-width: 60px;
+
+}
+
+.speciality__heading{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--titles-font);
+
+}
+
+.speciality__desc{
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+    font-family: var(--texts-font);
+}
+
+.patients{
+    background-color: var(--bg);
+    height: 500px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.patients__title{
+    display: flex;
+    justify-content: center;
+}
+
+
+.slider{
+    margin-top: 40px;
+    max-width: 90%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.item{
+    width: 540px;
+}
+
+.slideWrapper{
+    border: 1px solid #eff8ff;
+    box-sizing: border-box;
+    min-width: 440px;
+    max-width: 540px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 65px 40px 40px 40px;
+    transition: background-color .5s;
+}
+.slideWrapper:hover{
+    background-color: var(--blue);
+}
+.slideWrapper:hover .patients__say{
+    color: white;
+}
+.slideWrapper:hover .patients__name{
+    color: white;   
+}
+
+.patients__say{
+    font-family: var(--texts-font);
+    color: var(--gray);
+    font-size: 16px;
+    transition: color .3s;
+    line-height: 25px;
+}
+
+.patients__name{
+    margin-top: 10px;
+    font-family: var(--titles-font);
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.slider .prev, .slider .next {
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 32%;
+    width: 56px;
+    box-sizing: border-box;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+}
+.slider__slides{
+    display: flex;
+    justify-content: space-around;
+    padding:0 120px;
+    overflow: hidden;
+}
+.slider .next {
+    right: 50px;
+}
+.slider .prev {
+    left: 50px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: #d7ebfb;
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+.slider .item{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
