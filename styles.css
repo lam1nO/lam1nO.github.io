@@ -257,9 +257,10 @@ h2{
 .slideWrapper{
     border: 1px solid #eff8ff;
     box-sizing: border-box;
-    min-width: 440px;
-    max-width: 540px;
-    height: 200px;
+    /* min-width: 440px;
+    max-width: 540px; */
+    width: 99%;
+    height: 92%;
     background-color: #fff;
     border-radius: 8px;
     padding: 65px 40px 40px 40px;
@@ -440,4 +441,17 @@ h2{
     text-align: center;
     color: #fff;
     flex-basis: 100%;
+}
+
+.swiper-container{
+    width: 1030px;
+    height: 210px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
