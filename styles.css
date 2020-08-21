@@ -60,7 +60,7 @@ body{
     font-family: var(--texts-font);
 }
 
-.menu__:hover{
+.menu__link:hover{
     color: var(--blue);
 }
 
@@ -126,11 +126,18 @@ body{
 }
 .more:hover{
     background-color: #F0F0F0;
+    cursor: pointer;
 }
 
 .more:focus{
     outline: none;
 }
+
+
+
+/* speciality */
+
+
 
 .speciality{
     padding-top: 120px;
@@ -210,6 +217,16 @@ h2{
     font-family: var(--texts-font);
 }
 
+
+
+
+
+/* patients */
+
+
+
+
+
 .patients{
     background-color: var(--bg);
     height: 500px;
@@ -244,7 +261,7 @@ h2{
     max-width: 540px;
     height: 200px;
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 65px 40px 40px 40px;
     transition: background-color .5s;
 }
@@ -352,4 +369,75 @@ h2{
     to {
         opacity: 1
     }
+}
+
+
+
+
+/* doctors */
+
+.doctors{
+    height: 600px;
+}
+
+.doctors__title{
+    margin-top: 110px;
+    text-align: center;
+}
+
+
+
+.card-container{
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.spec__wrapper{
+    flex-basis: 48%;
+    position: relative;
+    margin: 20px 1%;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+}
+
+.spec__wrapper:hover{
+    cursor: pointer;
+}
+
+.spec__wrapper--clicked{
+    transform: rotateY(180deg);
+}
+
+.spec__wrapper--clicked .hello{
+    z-index: 1;
+
+}
+
+.speciality__block{
+    backface-visibility: hidden;
+}
+
+.hello{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.hello p{
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    flex-basis: 100%;
 }
