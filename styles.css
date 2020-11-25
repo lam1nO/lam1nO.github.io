@@ -425,6 +425,7 @@ h2{
 
 .speciality__block{
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .hello{
