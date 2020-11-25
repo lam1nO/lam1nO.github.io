@@ -440,6 +440,7 @@ h2{
     z-index: -1;
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .hello p{
