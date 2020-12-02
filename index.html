@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="1519">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
@@ -20,14 +20,17 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <section class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="/img/logo/logo.svg" alt="logo">
+                <a href="index.html">
+                    <img src="/img/logo/logo.svg" alt="logo">
+                </a>
             </div>
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="#23" class="menu__link">Услуги</a>
+                    <a href="/try.html" class="menu__link">Услуги</a>
                 </li>
                 <li class="menu__item">
                     <a href="#" class="menu__link">Отзывы</a>
@@ -42,17 +45,17 @@
         </div>
         <div class="header__main">
             <div class="header__title">
-                Ваше Здоровье - <br>Наша Цель
+                Ультразвуковая <br> диагностика от<br>УЗИ Fix
             </div>
             <div class="header__text">
-                <p class="text">Мы работаем, чтобы заботиться о Вашем здоровье.</p>
+                <p class="text">Всё в одном месте выберите то, что Вам нужно</p>
             </div>
             <div class="header_buttons">
                 <button class="contact-us">
                     Свяжитесь с нами
                 </button>
                 <button class="more">
-                    Подробнее
+                    Услуги
                 </button>
             </div>
         </div>
@@ -62,40 +65,58 @@
         <div class="speciality__title">
             <h2 class="main-title" id="23">Наши Услуги</h2>
         </div>
+        
         <div class="speciality__wrapper">
+            <dialog class="spec__info spec__info-800">
+            <p>Это окно, которое сделано на html5 и javascript Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit!</p>
+            <button id="spec__info-close-800">Закрыть</button>
+        </dialog>
             <div class="card-container">
                 <div class="spec__wrapper spec__wrapper1">
                     <div class="speciality__block">
-                        <div class="icon-bg">
-                            <img src="img/icons/heart.svg" class="icon">
+                        <h3 class="speciality__heading">УЗИ за 800₽</h3>
+                        <div class="speciality__list-wrapper">
+                            <ul class="speciality__list">
+                                <li class="speciality__item">УЗИ сосудов</li>
+                                <li class="speciality__item">УЗИ сердца</li>
+                                <li class="speciality__item">УЗИ позвоночника</li>
+                                <li class="speciality__item">Допплерография плода</li>
+                                <li class="speciality__item">УЗИ брюшной полости</li>
+                            </ul>
                         </div>
-                        <h3 class="speciality__heading">Lorem</h3>
-                        <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!
+                        <div class="speciality__button-wrapper">
+                            <button id="spec__info-open-800" class="contact-us speciality__button">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="hello">
-                        <p>Hi Betcj</p>
                     </div>
                 </div>
             </div>
-
             <div class="card-container">
-                <div class="spec__wrapper spec__wrapper2">
+                <div class="spec__wrapper spec__wrapper1">
                     <div class="speciality__block">
-                        <div class="icon-bg">
-                            <img src="img/icons/heart.svg" class="icon">
-                        </div>
-                        <h3 class="speciality__heading">Lorem</h3>
-                        <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!
+                        <h3 class="speciality__heading">УЗИ за 600₽</h3>
+                        <div class="specility-middl"></div>
+                        <div class="speciality__button-wrapper">
+                            <button class="contact-us speciality__button">Подробнее</button>
                         </div>
                     </div>
-                    <div class="hello">
-                        <p>Hi Betcj</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="spec__wrapper spec__wrapper1">
+                    <div class="speciality__block">
+                        <!-- <h3 class="speciality__heading">Сезонные предложения</h3> -->
+                        <h3 class="speciality__heading" style="">Сезонные</h3>
+                        <h3 class="speciality__heading">предложения</h3>
+
+                        <div class="specility-middl"></div>
+                        <div class="speciality__button-wrapper">
+                            <button class="contact-us speciality__button">Подробнее</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card-container">
+            <!-- <div class="card-container">
                 <div class="spec__wrapper spec__wrapper3">
                     <div class="speciality__block">
                         <div class="icon-bg">
@@ -109,59 +130,211 @@
                         <p>Hi Betcj</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="card-container">
-                <div class="spec__wrapper spec__wrapper4">
-                    <div class="speciality__block">
-                        <div class="icon-bg">
-                            <img src="img/icons/heart.svg" class="icon">
-                        </div>
-                        <h3 class="speciality__heading">Lorem</h3>
-                        <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!
-                        </div>
-                    </div>
-                    <div class="hello">
-                        <p>Hi Betcj</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card-container">
-                <div class="spec__wrapper spec__wrapper5">
-                    <div class="speciality__block">
-                        <div class="icon-bg">
-                            <img src="img/icons/heart.svg" class="icon">
-                        </div>
-                        <h3 class="speciality__heading">Lorem</h3>
-                        <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!
-                        </div>
-                    </div>
-                    <div class="hello">
-                        <p>Hi Betcj</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-container">
-                <div class="spec__wrapper spec__wrapper6">
-                    <div class="speciality__block">
-                        <div class="icon-bg">
-                            <img src="img/icons/heart.svg" class="icon">
-                        </div>
-                        <h3 class="speciality__heading">Lorem</h3>
-                        <div class="speciality__desc">Lorem ipsum dolor sit consectetur adipisicing elit. Fugit, saepe!
-                        </div>
-                    </div>
-                    <div class="hello">
-                        <p>Hi Betcj</p>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </section>
-    
+
+
+
+
+
+    <section class="request">
+        <div class="request__container">
+            <div class="request__info">
+                <div class="request__info-title">
+                    Запись на прием
+                </div>
+                <div class="request__info-desc">
+                    Оформите заявку и после того, как вы отправите запрос, наш офис свяжется с вами в течение одного
+                    рабочего дня, чтобы назначить встречу.
+                </div>
+                <ul class="request__ul">
+                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах
+                    </li>
+                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Специалист ответит на
+                        ваши вопросы</li>
+                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Мы назначим время и дата
+                        приема</li>
+                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах
+                    </li>
+                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах
+                    </li>
+                </ul>
+            </div>
+
+            <div class="request__form">
+                <div class="mini-title">Заполните форму заявки</div>
+                <p>Ваше ФИО*</p>
+                <input type="text" size=40>
+                <p>Ваш номер телефона*</p>
+                <input type="text" size=40>
+                <p>Какой услугой интересуетесь?</p>
+                <div class="inp-container">
+                    <input type="radio">
+                    <div class="input-radio-text">УЗИ</div>
+                    <input type="radio">
+                    <div class="input-radio-text">Терапевт</div>
+                    <input type="radio">
+                    <div class="input-radio-text">Уролог</div>
+                </div>
+                <button class="request__sign">Записаться</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors">
+        <div class="doctors__title">
+            <h2 class="main-title">Наши Специалисты</h2>
+        </div>
+
+        <div class="our__doctors">
+            <div class="swiper-container doctors__swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/muhametzyanov_l.jpg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Ильшат Мухаметзянов
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/Jakupova.jpg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Кто-то Якупова
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/zaripova.jpg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Кто-то2 Зарипова
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/idk.jpeg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Первый ноунейм
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/idk2.jpeg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Второй Ноунейм
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideWrapper doctors__slideWrapper">
+                            <div class="doctor">
+                                <div class="doctor__wrapper">
+                                    <img src="/img/doctors/fotka).jpg" alt="" class="doctor__photo">
+                                </div>
+                                <div class="doctor__info">
+                                    <div class="doctor__name">
+                                        Записана Фотка
+                                    </div>
+                                    <div class="doctor__spec">
+                                        Врач УЗИ, терапевт
+                                    </div>
+                                    <div class="doctor__number">
+                                        <a href="tel:+79374395947">
+                                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
+                                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+
+    </section>
+
     <section class="patients">
         <div class="patients__title">
             <h2 class="main-title">Отзывы</h2>
@@ -217,96 +390,9 @@
 
     </section>
 
-    <section class="doctors">
-        <div class="doctors__title">
-            <h2 class="main-title">Наши Специалисты</h2>
-        </div>
-
-        <div class="our__doctors">
-            <div class="doctor">
-                <div class="doctor__photo">
-                    <img src="/img/doctors/muhametzyanov_l.jpg" alt="">
-                </div>
-                <div class="doctor__info">
-                    <div class="doctor__name">
-                        Ильшат Мухаметзянов
-                    </div>
-                    <div class="doctor__spec">
-                        Врач УЗИ, терапевт
-                    </div>
-                    <div class="doctor__number">
-                        <a href="tel:+79374395947">
-                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
-                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="doctor">
-                <div class="doctor__photo">
-                    <img src="/img/doctors/miftahov_l.jpg" alt="">
-                </div>
-                <div class="doctor__info">
-                    <div class="doctor__name">
-                        Азат Мифтахов
-                    </div>
-                    <div class="doctor__spec">
-                        Врач УЗИ, уролог
-                    </div>
-                    <div class="doctor__number">
-
-                        <a href="tel:+79374395947">
-                            <img src="/img/icons/phone.svg" style="width: 18px;"></img>
-                            <p style="margin: 0; margin-top: 5px;">+7 937 439-59-47</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="request">
-        <div class="request__container">
-            <div class="request__info">
-                <div class="request__info-title">
-                    Запись на прием
-                </div>
-                <div class="request__info-desc">
-                    Оформите заявку и после того, как вы отправите запрос, наш офис свяжется с вами в течение одного рабочего дня, чтобы назначить встречу.
-                </div>
-                <ul class="request__ul">
-                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах</li>
-                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Специалист ответит на ваши вопросы</li>
-                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Мы назначим время и дата приема</li>
-                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах</li>
-                    <li class="request__li"><img src="/img/icons/check.svg" style="width:14px;">Расскажите о жалобах</li>
-                </ul>
-            </div>
-
-            <div class="request__form">
-                <div class="mini-title">Заполните форму заявки</div>
-                <p>Ваше ФИО*</p>
-                <input type="text" size=40>
-                <p>Ваш номер телефона*</p>
-                <input type="text" size=40>
-                <p>Какой услугой интересуетесь?</p>
-                <div class="inp-container">
-                    <input type="radio">
-                    <div class="input-radio-text">УЗИ</div>
-                    <input type="radio">
-                    <div class="input-radio-text">Терапевт</div>
-                    <input type="radio">
-                    <div class="input-radio-text">Уролог</div>
-                </div>
-                <button class="request__sign">Записаться</button>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="footer__container">
+            <a href="/politics.html">Политика</a>
             <div class="footer__item">
                 <div class="icon-bg" style="width: 70px; height: 70px;">
                     <img src="/img/icons/phone_line.svg" alt="" style="width: 25px;">

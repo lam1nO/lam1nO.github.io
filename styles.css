@@ -15,10 +15,15 @@ body{
 }
 
 
+.doc{
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
 .header{
     box-sizing: border-box;
     width: 100%;
-    max-height: 800px;
+    height: 800px;
     padding-top: 35px;
     padding-left: 15%;
     padding-right: 15%;
@@ -28,6 +33,12 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+}
+
+.politics__header{
+    background-image: none;
+    background-color: var(--bg);
+    height: 6000px;
 }
 
 .header__container{
@@ -157,7 +168,7 @@ h2{
 }
 
 .speciality__title{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .main-title{
@@ -175,16 +186,25 @@ h2{
     padding-bottom: 10%;
 }
 
+.speciality__item{
+    font-family: var(--texts-font);
+    color: var(--gray);         
+}
+
+.speciality__list-wrapper{
+    margin-left: -25px;
+}
+
 .speciality__block{
     width: 210px;
-    padding: 40px;
+    padding: 15px 50px 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.speciality__block:hover{
+.speciality__block{
     box-shadow: 0px 10px 40px rgba(32, 62, 84, 0.08);
 }
 
@@ -205,6 +225,46 @@ h2{
 
 }
 
+.card-container{
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.spec__wrapper{
+    flex-basis: 48%;
+    position: relative;
+    margin: 20px 1%;
+}
+
+.spec__wrapper:hover{
+    cursor: pointer;
+}
+
+.spec__wrapper--clicked{
+
+}
+.overlay {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: black;
+    height: 300%;
+    width: 100%;
+    opacity: .7;
+    z-index: -2;
+}
+.overlay-open{
+    z-index: 10;
+}  
+
+
+.spec__info{
+    z-index: 20;
+    min-height: 400px;
+}
+
 .speciality__heading{
     color: var(--black);
     font-size: 18px;
@@ -220,6 +280,25 @@ h2{
     font-family: var(--texts-font);
 }
 
+.speciality__button-wrapper{
+    margin-top: 20px;
+}
+
+.speciality__button{
+    background-color: var(--blue);
+    width: 195px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+    appearance: none;
+    border: 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.15);
+    border-radius: 15px;
+    margin-right: 10px;
+    font-family: var(--texts-font);
+}
 
 
 
@@ -394,39 +473,7 @@ h2{
 
 
 
-.card-container{
-    max-width: 500px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
-}
 
-.spec__wrapper{
-    flex-basis: 48%;
-    position: relative;
-    margin: 20px 1%;
-    transform-style: preserve-3d;
-    transition-duration: 1s;
-}
-
-.spec__wrapper:hover{
-    cursor: pointer;
-}
-
-.spec__wrapper--clicked{
-    transform: rotateY(180deg);
-}
-
-.spec__wrapper--clicked .hello{
-    z-index: 1;
-
-}
-
-.speciality__block{
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
 
 .hello{
     position: absolute;
@@ -463,6 +510,10 @@ h2{
     justify-content: center;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0;
+}
+
 .our__doctors{
     display: flex;
     justify-content: center;
@@ -481,9 +532,10 @@ h2{
 }
 
 .doctor__name{
-    font-family: var(--texts-font);
+    font-family: var(--poppins);
     color: var(--black);
     font-size: 18px;
+    text-shadow: black 0 0 0.4px;
     text-align: center;
 }
 
@@ -496,6 +548,10 @@ h2{
     margin-top: 5px;
 }
 
+.doctor__photo{
+    width: 150px;
+    height: 200px;
+}
 
 .doctor__number{
     display: flex;
@@ -512,6 +568,20 @@ h2{
     display: flex;
 }
 
+.doctors__swiper-container{
+    height: 375px;
+}
+
+.doctors__slideWrapper{
+    height: 350px;
+    background-color: #fff;
+    width: 280px;
+    padding: 45px 40px 40px 40px;
+}
+
+.doctors__slideWrapper:hover{
+    background-color: #fff;
+}
 
 /* request */
 
@@ -650,12 +720,8 @@ body{
 
 /* footer */
 .footer{
-    position: fixed;
     height: 300px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    
 }
  
 .footer__container{

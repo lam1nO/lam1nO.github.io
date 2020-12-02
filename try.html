@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trycss.css">
+</head>
+<body>
+<dialog>
+  <p>Это окно, которое сделано на html5 и javascript</p>
+  <button id="close">Закрыть</button>
+</dialog>
+<button id="show">Открыть всплывающее окно!</button>
+
+<script type = text/javascript>
+var dialog = document.querySelector('dialog');
+document.querySelector('#show').onclick = function() {
+  dialog.show();
+};
+document.querySelector('#close').onclick = function() {
+  dialog.close();
+};
+</script>
+
+
+</body>
+</html>
